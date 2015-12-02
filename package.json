@@ -1,0 +1,32 @@
+{
+  "name": "engine-app",
+  "version": "1.0.0",
+  "description": "Engine app related helper functions.",
+  "main": "lib/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "dependencies": {
+    "engine-paths": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jillix/engine-app.git"
+  },
+  "keywords": [
+    "engine",
+    "app",
+    "helper",
+    "functions"
+  ],
+  "author": "jillix <contact@jillix.com> (http://jillix.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jillix/engine-app/issues"
+  },
+  "homepage": "https://github.com/jillix/engine-app#readme"
+}
