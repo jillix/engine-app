@@ -89,6 +89,20 @@ Removes an instance.
 - **String** `name`: The instance name.
 - **Function** `cb`: The callback function.
 
+### `listInstance(cb)`
+listInstances
+List instances.
+
+#### Params
+- **Function** `cb`: The callback function.
+
+### `getAllnstances(cb)`
+getAllInstances
+Read all instances.
+
+#### Params
+- **Function** `cb`: The callback function.
+
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
