@@ -43,21 +43,37 @@ Creates a new instance of `EngineApp`.
 #### Params
 - **String** `appPath`: The app path.
 
-### `getPackage(fn)`
+### `getPackage(cb)`
 Gets the package.json content.
 
 #### Params
-- **Function** `fn`: The callback function.
+- **Function** `cb`: The callback function.
 
 #### Return
 - **Object** The `package.json` content as json (if called without a callback function).
 
-### `setPackage(data, fn)`
+### `setPackage(data, cb)`
 Sets the package.json content.
 
 #### Params
 - **Object** `data`: The data to set in the file.
-- **Function** `fn`: The callback function.
+- **Function** `cb`: The callback function.
+
+### `getModulePackage(name)`
+Reads the module `package.json` file.
+
+#### Params
+- **String** `name`: The module name.
+
+#### Return
+- **Object** The `package.json` content as json (if called without a callback function).
+
+### `setModulePackage(name, data)`
+Writes the module `package.json` file.
+
+#### Params
+- **String** `name`: The module name.
+- **Object** `data`: The data to set in the file.
 
 ### `createInstance(name, data, cb)`
 Creates a new instance.
@@ -67,12 +83,12 @@ Creates a new instance.
 - **Object** `data`: The instance content.
 - **Function** `cb`: The callback function.
 
-### `readInstance(name, fn)`
+### `readInstance(name, cb)`
 Gets the instance content.
 
 #### Params
 - **String** `name`: The instance name.
-- **Function** `fn`: The callback function.
+- **Function** `cb`: The callback function.
 
 ### `updateInstance(name, data, cb)`
 Updates an instance.
@@ -101,6 +117,22 @@ getAllInstances
 Read all instances.
 
 #### Params
+- **Function** `cb`: The callback function.
+
+### `renameInstance(oldName, newName, cb)`
+Renames the specified instance.
+
+#### Params
+- **String** `oldName`: The old instance name.
+- **String** `newName`: The new instance name.
+- **Function** `cb`: The callback function.
+
+### `upsertInstance(name, data, cb)`
+Creates or updates the specified instance.
+
+#### Params
+- **String** `name`: The instance name.
+- **Object** `data`: The instance content.
 - **Function** `cb`: The callback function.
 
 ## How to contribute
