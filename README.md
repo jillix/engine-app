@@ -37,11 +37,11 @@ myApp.createInstance("layout", (err, data) => {
 
 ## Documentation
 
-### `EngineApp(appPath)`
+### `EngineApp(adapter)`
 Creates a new instance of `EngineApp`.
 
 #### Params
-- **String** `appPath`: The app path.
+- **String|CompositionAdapter** `adapter`: The path to the application or the adapter object.
 
 ### `getPackage(cb)`
 Gets the package.json content.
