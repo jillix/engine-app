@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "abs": "^1.2.1",
-    "engine-composition-crud": "^1.0.0",
-    "engine-paths": "^1.0.1",
+    "engine-composition-crud": "jillix/engine-composition-crud",
+    "engine-paths": "jillix/engine-paths",
     "is-there": "^4.3.1",
     "r-json": "^1.2.1",
     "w-json": "^1.3.1"
